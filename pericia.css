@@ -1,0 +1,191 @@
+body {
+    color: white;
+    font-family: "Berkshire Swash", serif;
+    background-image: url('imagens/fundo.jpg');
+    backdrop-filter: blur(6px);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    color: #f50505;
+    text-shadow: 2px 2px 4px black;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+input {
+    background-color: #ffffff;
+    color: #000;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #b92f2f;
+    color: #ffffff;
+}
+
+td {
+    background-color: #333;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: red;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    left: 42%;
+    margin-top: 20px;
+    font-size: larger;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #700000;
+    transform: scale(1.05);
+}
+
+.btn-excluir {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-excluir:hover {
+    background-color: #d9534f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: large;
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: medium;
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    input, button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

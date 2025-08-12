@@ -1,0 +1,88 @@
+body {
+    color: white;
+    font-family: "Berkshire Swash", serif;
+    background-image: url('imagens/fundo.jpg');
+    backdrop-filter: blur(6px);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0000004f;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #f50505;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    background-color: #ffffff;
+    color: white;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.486);
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    color: rgb(0, 0, 0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #b92f2f;
+    color: #000000;
+}
+
+a {
+    color: #b1adb5;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Berkshire Swash", serif;
+    position: absolute;
+    
+
+}
+
+a:hover {
+    color: red;
+}
+

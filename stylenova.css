@@ -1,0 +1,147 @@
+body {
+    color: white;
+    font-family: "Berkshire Swash", serif;
+    background-image: url('imagens/fundo.jpg');
+    backdrop-filter: blur(6px);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #0000004f;
+    border-radius: 10px;
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #f50505;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+input {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #b92f2f;
+    transform: scale(1.05);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.486);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: red;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #b92f2f;
+    color: #ffffff;
+}
+
+td {
+    background-color: #333;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Berkshire Swash", serif;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: red;
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f80000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
